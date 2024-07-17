@@ -47,14 +47,25 @@ table {
 /*BODY*/
 
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 20px;
+	/* background-color: white;
+	box-shadow: 10px 10px 376px 0px rgba(0,0,0,0.81) inset */
+}
+
+.weatherStation {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	border-radius: 20px;
 	background-color: white;
 	box-shadow: 10px 10px 376px 0px rgba(0,0,0,0.81) inset
 }
 
-.contents {
-	
+.contentForecast {
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	overflow: scroll;
 }

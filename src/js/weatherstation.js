@@ -36,20 +36,19 @@ const renderWeather = (weatherData) => {
     //console.log(forecast);
     let elements = ''
     const contents = `
-        <div>City:<span class="city">${city}</span></div>
-        <div>Country:<span class="country">${country}</span></div>
-        <div>Weather:<span class="weather">${weather}</span></div>
-        <div class="picture" style="width: 30px; height: 30px;">
+        <div>Ciudad: <span class="city">${city}.</span></div>
+        <div>Pais: <span class="country">${country}.</span></div>
+        <div>Tiempo: <span class="weather">${weather}.</span></div>
+        <div class="picture" style="width: 80px; height: 80px;">
             <img style="width: 100%; height: 100%;" src="${picture}" alt="${city}-forecast"></div>
-            <div class="temperature">${temperature}</div>
-        </div>
+            <div class="temperature">${temperature} Cº</div>
         <div>
-            <p>Precipitation:<span class="precipitation">${precipitation}</span></p>
-            <p>Humidity:<span class="humidity">${humidity}</span></p>
-            <p>Wind:<span class="wind">${wind}</span></p>
+            <p>Precipitación: <span class="precipitation">${precipitation}%</span></p>
+            <p>Humedad: <span class="humidity">${humidity}%</span></p>
+            <p>Viento: <span class="wind">${wind} Km/h</span></p>
         </div>
         `
-        currentConts.insertAdjacentHTML('afterbegin', contents)
+        currentConts.insertAdjacentHTML('afterbegin',contents)
 
     forecast.forEach(element => {
         elements += `
@@ -58,7 +57,7 @@ const renderWeather = (weatherData) => {
                 <div style="width: 30px; height: 30px;" class="image">
                  <img style="width: 100%; height: 100%;" src="${element.condition.icon}" alt="${city}-forecast">
                  </div>
-                 <div class="degres">${element.temp_c}</div>
+                 <div class="degres">Temperature: ${element.temp_c} Cº</div>
             </div>
             `
     });

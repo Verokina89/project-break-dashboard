@@ -47,8 +47,11 @@ table {
 /*BODY*/
 
 body {
-	/* background-color: white;
-	box-shadow: 10px 10px 376px 0px rgba(0,0,0,0.81) inset */
+	font-family: 'Poppins', sans-serif;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
 }
 
 .weatherStation {
@@ -68,4 +71,21 @@ body {
 	width: 100%;
 	height: auto;
 	overflow: scroll;
+}
+
+
+footer {
+    display: flex;
+    justify-content: end;
+    position:relative;
+
+}
+
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    filter: invert();
+    padding: 10px;
+
 }

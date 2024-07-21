@@ -46,13 +46,49 @@ table {
 
 /*BODY*/
 
+body {
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
 header a {
 	display: flex;
-	color: black;
+	color: white;
 	text-decoration: none;
 	gap: 20px;
 }
 
+
 .headerLogo img {
 	width: 30px;
+	filter: invert(100%);
+}
+
+.linkContainer img {
+	filter: invert(100%);
+}
+
+.linkContainer h1 {
+	color: white;
+	
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    position:relative;
+
+}
+
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    filter: invert();
+    padding: 10px;
+
 }

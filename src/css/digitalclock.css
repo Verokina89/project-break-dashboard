@@ -46,13 +46,14 @@ table {
 
 /*BODY */
 
-/* body {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	text-align: center;
-	gap: 10px;
-} */
+body {
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
 
 .clockContainer {
 	display: flex;
@@ -72,4 +73,21 @@ h2 {
 
 .date {
 	font-size:18px;
+
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    position:relative;
+
+}
+
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    filter: invert();
+    padding: 10px;
+
 }

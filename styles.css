@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -26,9 +26,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    width: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
 	line-height: 1;
 }
 ol, ul {
@@ -49,15 +46,26 @@ table {
 
 /*BODY*/
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
 footer {
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
+    justify-content: end;
+    position:relative;
+
 }
 
 footer nav {
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
-    
+    gap: 10px;
+    filter: invert();
+    padding: 10px;
+
 }

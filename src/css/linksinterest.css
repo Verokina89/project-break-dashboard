@@ -45,3 +45,14 @@ table {
 }
 
 /*BODY*/
+
+header a {
+	display: flex;
+	color: black;
+	text-decoration: none;
+	gap: 20px;
+}
+
+.headerLogo img {
+	width: 30px;
+}

@@ -3,7 +3,7 @@ const showDate = document.getElementById('date');
 let tips = document.getElementById('message');
 
 let date = new Date();
-let weekday = ['Domingo, Lunes','Martes','Miercoles','Miercoles','Jueves','Viernes','Sabado'];
+let weekday = ['Domingo','Lunes','Martes','Miercoles','Miercoles','Jueves','Viernes','Sabado'];
 let yearMonth = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 
 showDate.innerHTML = `
@@ -32,9 +32,9 @@ function tipsHours() {
     } else if ((hour >= 12 && minuts >= 0) && (hour < 14)) {
         message = 'Echa un rato mas pero no olvides comer.';
     } else if ((hour >= 14 && minuts >= 0) && (hour < 16)) {
-        message = '¡Espero que hayas comido!';
+        message = '¡Espero que hayas comido!😋';
     } else if ((hour >= 16 && minuts >= 0) && (hour < 18)) {
-        message = '¡Buenas tardes! solo queda el ultimo empujón.';
+        message = '¡Buenas tardes! solo queda el ultimo empujón. 💪';
     } else if ((hour >= 18 && minuts >=0) && (hour < 22)) {
         message = 'Esto ya son horas extras... ¡Piensa en parar pronto!';
     } else if ((hour >= 22 && minuts >= 0) && (hour < 24)) {

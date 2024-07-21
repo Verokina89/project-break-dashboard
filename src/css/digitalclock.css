@@ -46,7 +46,15 @@ table {
 
 /*BODY */
 
-body {
+/* body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	gap: 10px;
+} */
+
+.clockContainer {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -54,7 +62,7 @@ body {
 	gap: 10px;
 }
 
-h1 {
+h2 {
 	font-size: 20px;
 }
 

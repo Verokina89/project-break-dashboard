@@ -36,9 +36,9 @@ const renderWeather = (weatherData) => {
     //console.log(forecast);
     let elements = ''
     const contents = `
-        <div>Ciudad: <span class="city">${city}.</span></div>
-        <div>Pais: <span class="country">${country}.</span></div>
-        <div>Tiempo: <span class="weather">${weather}.</span></div>
+        <div><span class="city">${city}</span></div>
+        <div><span class="country">${country}</span></div>
+        <div><span class="weather">${weather}</span></div>
         <div class="picture" style="width: 80px; height: 80px;">
             <img style="width: 100%; height: 100%;" src="${picture}" alt="${city}-forecast"></div>
             <div class="temperature">${temperature} Cº</div>
@@ -54,10 +54,10 @@ const renderWeather = (weatherData) => {
         elements += `
             <div>
                 <div class="foreHour">${element.time}</div>
-                <div style="width: 30px; height: 30px;" class="image">
+                <div style="width: 40px; height: 40px;" class="image">
                  <img style="width: 100%; height: 100%;" src="${element.condition.icon}" alt="${city}-forecast">
                  </div>
-                 <div class="degres">Temperature: ${element.temp_c} Cº</div>
+                 <div class="degres"> ${element.temp_c} Cº</div>
             </div>
             `
     });

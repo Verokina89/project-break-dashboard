@@ -8,16 +8,71 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <!-- <img src="./src/assets/img/backgroud/wp9389097.webp" class="" id="background" alt="background"> -->
-    <main>
-      
+    <section>
+            <div class="linkContainer">
+                <h1>Añade tu enlace de interés</h1>
+                <img src="./src/assets/img/link.png" alt="imgLink">
+            </div>
+            <form id="formLink" class="formLink">
+                <input type="text" placeholder="Nombre del enlace" class="inputName" id="inputName" required>
+                <input type="text" placeholder="https://www..." class="inputLink" id="inputLink">
+                <button type="submit" class="buttonLink" id="buttonLink">Añadir enlace</button>
+            </form>
+            <ul class="listLink" id="linkList"></ul>
+    </section>
+    <section>
+        <div class="clockContainer"> 
+            <div class="digitalClock">
+                <h2 class="title">Son las...</h2>
+                <div class="hour" id="hour">20:00</div>
+                <div class="date" id="date">15/07/24</div>
+                <div class="message" id="message"></div>
+            </div>
+        </div>
+        <div class="contents" id="contents">
+                <!-- <div>City:<span class="city">${city}</span></div>
+                <div>Country:<span class="country">${country}</span></div>
+                <div>Weather:<span class="weather">${weather}</span></div>
+                <div class="picture" style="width: 30px; height: 30px;">
+                    <img style="width: 100%; height: 100%;" src="${picture}" alt="${city}-forecast"></div>
+                    <div class="temperature">${temperature}</div>
+                </div>
+                <div>
+                    <p>Precipitation:<span class="precipitation">${precipitation}</span></p>
+                    <p>Humidity:<span class="humidity">${humidity}</span></p>
+                    <p>Wind:<span class="wind">${wind}</span></p>
+                </div>-->
+        </div>
+        <div class="contentForecast" id="contentForecast">
+                <!-- <div>
+                    <div class="elementHour">${element.time}</div>
+                    <div style="width: 30px; height: 30px;" class="image">
+                    <img style="width: 100%; height: 100%;" src="${element.condition.icon}" alt="${city}-forecast">
+                    </div>
+                    <div class="degres">${element.temp_c}</div>>
+                </div> -->
+        </div>
+    </section>
+    <section>
+        <div class="passwordTittle">
+            <h2>Creador de Contraseña Segura</h2>
+            <img style="width: 20px; height: 20px;" src="./src/assets/img/lockblack.png" alt="lock">
+        </div>
+        <div class="passwordCharacters">
+            <input type="range" value="12" min="12" max="50" class="inputRange" 
+            onInput="this.nextElementSibling.value = this.value">
+            <output>12</output>
+        </div>
+        <button type="button" id="createPassword" class="createButton">Crear Contraseña</button>
+        <div class="passwordCreate" id="passwordCreate">Contraseña Creada:</div>
+    </section>
     </main>
     <footer>
         <nav>
             <a href="../../src/components/digitalclock.html">
                 <img src="./src/assets/img/clock.png" alt="clock">
             </a>
-            <a href="../../src/components/linksinterest.html">
+            <a href="./src/components/securepassword.html">
                 <img src="./src/assets/img/lockblack.png" alt="lock">
             </a>
             <a href="../src/components/linksinterest.html">
@@ -29,5 +84,10 @@
         </nav>
     </footer>
     <script src="./script.js"></script>
+    <script src="./src/js/digitakclock.js"></script>
+    <script src="./src/js/linksinterest.js"></script>
+    <script src="./src/js/securepassword.js"></script>
+    <script src="./src/js/weatherstation.js"></script>
+
 </body>
 </html>

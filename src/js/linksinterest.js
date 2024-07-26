@@ -19,7 +19,7 @@ const savedLinks = (name, link, index) => {
     const buttonDelete = document.createElement('button');
 
     buttonDelete.textContent = 'X';
-    buttonDelete.style.marginLeft = '1px';
+    // buttonDelete.style.marginLeft = '1px';
     buttonDelete.onclick = () => {
         deleteLink(index);
     };

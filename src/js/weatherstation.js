@@ -23,7 +23,7 @@ const fetchWeather = async () => {
             forecast: data.forecast.forecastday[0].hour
         }
         renderWeather(dayWeather)
-        //console.log(getData);
+        console.log(getData);
     } catch (error) {
         console.log(error. message);
     }
@@ -36,28 +36,33 @@ const renderWeather = (weatherData) => {
     //console.log(forecast);
     let elements = ''
     const contents = `
-        <div><span class="city">${city}</span></div>
-        <div><span class="country">${country}</span></div>
+        <div><span class="city">${city} /</span>
+        <span class="country">${country}</span></div>
         <div><span class="weather">${weather}</span></div>
-        <div class="picture" style="width: 80px; height: 80px;">
+        <div class="tempDay">
+            <div class="picture" style="width: 80px; height: 80px;">
             <img style="width: 100%; height: 100%;" src="${picture}" alt="${city}-forecast"></div>
-            <div class="temperature">${temperature} Cº</div>
-        <div>
-            <p>Precipitación: <span class="precipitation">${precipitation}%</span></p>
-            <p>Humedad: <span class="humidity">${humidity}%</span></p>
-            <p>Viento: <span class="wind">${wind} Km/h</span></p>
+            <div class="temperature">${temperature}
+                <img src="../assets/img/imgtemperature.png" style="width: 30px; height: 30px;">
+            </div>
+            <div>
+                <p>Precipitación: <span class="precipitation">${precipitation}%</span></p>
+                <p>Humedad: <span class="humidity">${humidity}%</span></p>
+             <p>Viento: <span class="wind">${wind} Km/h</span></p>
+            </div>
         </div>
         `
-        currentConts.insertAdjacentHTML('afterbegin',contents)
-
+        currentConts.insertAdjacentHTML('afterbegin', contents)
+    
     forecast.forEach(element => {
+        const onlyHour = element.time.split(' ')[1]
         elements += `
-            <div>
-                <div class="foreHour">${element.time}</div>
+            <div class="summary">
+                <div class="foreHour">${onlyHour}</div>
                 <div style="width: 40px; height: 40px;" class="image">
                  <img style="width: 100%; height: 100%;" src="${element.condition.icon}" alt="${city}-forecast">
                  </div>
-                 <div class="degres"> ${element.temp_c} Cº</div>
+                 <div class="degres">${element.temp_c}Cº</div>
             </div>
             `
     });

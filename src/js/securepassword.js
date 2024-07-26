@@ -22,6 +22,10 @@ function createPassword(length) {
 createButton.onclick = function() {
     const length = range.value;
     const password = createPassword(length);
-    passwordCreate.textContent = 'Contraseña Creada: ' + password;
+    passwordCreate.innerHTML = `
+    <h3>Contraseña Creada:</h3>
+    <p>${password}</p>
+    `
+    // passwordCreate.textContent = 'Contraseña Creada: ' + password;
     
 };

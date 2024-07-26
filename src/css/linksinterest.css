@@ -65,8 +65,9 @@ body {
 
 }
 
-.header {
-	position: fixed;
+header .headerLogo {
+	display: flex;
+	
 }
 
 .headerLogo img {
@@ -77,6 +78,7 @@ body {
 header a {
 	display: flex;
 	text-decoration: none;
+	text-transform: uppercase;
 	padding: 10px;
 	gap: 10px;
 	color: white;
@@ -85,6 +87,7 @@ header a {
 
 .linkContainer {
 	color: white;
+	
 }
 
 .linkContainer h2 {
@@ -114,7 +117,7 @@ li button {
 
 } 
 
-button {
+/* button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -123,8 +126,20 @@ button {
 	background-color: #0371d8;
 	border: none;
 	border-radius: 5px;
+	width: 50%;
 	padding: 10px;
-	margin: 10px;
+	margin: 20px 0 0;
+	cursor: pointer;
+} */
+.buttonLink{
+	color: white;
+	background-color: #0371d8;
+	margin-top: 17px;
+	margin: 20px;
+	border: none;
+	border-radius: 5px;
+	width: 79%;
+	padding: 10px;
 	cursor: pointer;
 }
 
@@ -132,8 +147,9 @@ button {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
+	width: 360px;
 	height: 400px;
-	padding: 20px;
+	padding: 10px;
 	overflow: scroll;	
 }
 
@@ -154,14 +170,18 @@ footer {
     display: flex;
     justify-content: end;
     position:relative;
-
+	width: 50%;
 }
 
 footer nav {
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+    justify-content: end;
+	position: relative;
+    gap: 20px;
     filter: invert();
     padding: 10px;
-
+	width: 50%;
+	height: 35px;
+	left: 70%;
+	border-bottom: 1px solid black;
 }

@@ -19,7 +19,7 @@ const savedLinks = (name, link, index) => {
     const buttonDelete = document.createElement('button');
 
     buttonDelete.textContent = 'X';
-    // buttonDelete.style.marginLeft = '1px';
+    buttonDelete.style.marginLeft = '1px';
     buttonDelete.onclick = () => {
         deleteLink(index);
     };
@@ -83,37 +83,4 @@ buttonLink.addEventListener('click', (event) => {
 
 document.addEventListener('DOMContentLoaded', renderLinks);
 //Y aqui asegura que carguen los enlaces contenidos en localStorage persistan al refresh de la web. 
-
-
-
-
-
-
-
-
-
-
-
-
-// buttonLink.addEventListener('click', function(event) {
-//     event.preventDefault(); /* evita el evento de recargar la pagina*/
-
-//     const name = nameLink.value;
-//     const link = inputLink.value;
-
-//     if(name && link) {
-//         const listItem = document.createElement('li'); /**crear elemento lista */
-//         const anchor = document.createElement('a'); /**crear el enlace */
-//         anchor.href = link;
-//         anchor.textContent = name;
-//         anchor.target = '_blank'; /*abrir enlace en nueva pestaña */
-
-//         listItem.appendChild(anchor); /*añadir enlace a la lista*/
-//         linkList.appendChild(listItem); /**añadir elemento de la lista a la nueva lista */
-
-//     } else {
-//         alert('Completa los campos antes de añadir tu enlace')
-//     }
-
-// });
 

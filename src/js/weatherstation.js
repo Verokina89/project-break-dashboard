@@ -43,12 +43,12 @@ const renderWeather = (weatherData) => {
             <div class="picture" style="width: 80px; height: 80px;">
             <img style="width: 100%; height: 100%;" src="${picture}" alt="${city}-forecast"></div>
             <div class="temperature">${temperature}
-            <img src="../assets/img/imgtemperature.png" class="imgTempert" style="width: 40px; height: 40px;">
+            <img src="../assets/img/imgtemperature.png" class="imgTempert">
             </div>
             <div>
-                <p>Precipitación: <span class="precipitation">${precipitation}%</span></p>
-                <p>Humedad: <span class="humidity">${humidity}%</span></p>
-             <p>Viento: <span class="wind">${wind} Km/h</span></p>
+                <p class="precipitation">Precipitación: ${precipitation}%</p>
+                <p class="humidity">Humedad: ${humidity}%</p>
+                <p class="wind">Viento: ${wind} Km/h</p>
             </div>
         </div>
         `

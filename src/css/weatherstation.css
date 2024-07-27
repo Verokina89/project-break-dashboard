@@ -111,8 +111,12 @@ main {
 
 .temperature img {
 	filter: invert(100%);
-}
+} 
 
+/* .imgTempert {
+	filter: invert(100%);
+
+} */
 
 .tempDay{
 	display: flex;

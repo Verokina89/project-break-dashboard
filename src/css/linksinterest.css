@@ -124,13 +124,14 @@ section {
 	margin-bottom: 20px;
 	margin-top: 20px;
 	gap: 10px;
-	
 }
+
 .formLink input {
 	border: none;
 	padding: 10px;
 	border-radius: 5px;
 }
+
 .buttonLink{
 	padding: 10px;
 	border: none;
@@ -138,7 +139,6 @@ section {
 	background: #0371d8;
 	color: white;
 	font-size: 16px;
-
 }
 
 .listLink {
@@ -207,4 +207,5 @@ footer nav {
 footer  img {
     height: 30px;
 	width: 30px;
+	/* cursor: pointer; */
 } 

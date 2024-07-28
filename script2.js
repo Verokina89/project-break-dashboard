@@ -12,7 +12,20 @@ const imgBackground = ['../assets/img/backgroud/dogs-7275314_1280.jpg',
 '../assets/img/backgroud/IMG_0139.jpeg',
 '../assets/img/backgroud/IMG_0080.jpeg',
 '../assets/img/backgroud/hoja-fresca-refleja-verde-vibrante-rocio-manana-generado-ia_188544-15521.jpg',
-'../assets/img/backgroud/IMG_4434.jpeg'
+'../assets/img/backgroud/IMG_4434.jpeg',
+'../assets/img/backgroud/IMG_0169.jpeg',
+'../assets/img/backgroud/IMG_0225.jpeg',
+'../assets/img/backgroud/IMG_0297.jpeg',
+'../assets/img/backgroud/IMG_0604.jpeg',
+'../assets/img/backgroud/IMG_1373.jpeg',
+'../assets/img/backgroud/IMG_1475.jpeg',
+'../assets/img/backgroud/IMG_1579.jpeg',
+'../assets/img/backgroud/IMG_2453.jpeg',
+'../assets/img/backgroud/IMG_8436.jpeg',
+'../assets/img/backgroud/IMG_2472.jpeg',
+'../assets/img/backgroud/IMG_3916.jpeg',
+'../assets/img/backgroud/IMG_9617.jpeg',
+
 ]
 
 const backgroudRandom = () => {

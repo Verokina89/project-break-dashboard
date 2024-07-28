@@ -12,7 +12,22 @@ const imgBackground = ['./src/assets/img/backgroud/dogs-7275314_1280.jpg',
 './src/assets/img/backgroud/IMG_0139.jpeg',
 './src/assets/img/backgroud/IMG_0080.jpeg',
 './src/assets/img/backgroud/hoja-fresca-refleja-verde-vibrante-rocio-manana-generado-ia_188544-15521.jpg',
-'./src/assets/img/backgroud/IMG_4434.jpeg'
+'./src/assets/img/backgroud/IMG_4434.jpeg',
+'./src/assets/img/backgroud/IMG_0169.jpeg',
+'./src/assets/img/backgroud/IMG_0225.jpeg',
+'./src/assets/img/backgroud/IMG_0297.jpeg',
+'./src/assets/img/backgroud/IMG_0604.jpeg',
+'./src/assets/img/backgroud/IMG_1373.jpeg',
+'./src/assets/img/backgroud/IMG_1475.jpeg',
+'./src/assets/img/backgroud/IMG_1579.jpeg',
+'./src/assets/img/backgroud/IMG_2453.jpeg',
+'./src/assets/img/backgroud/IMG_8436.jpeg',
+'./src/assets/img/backgroud/IMG_4547.jpeg',
+'./src/assets/img/backgroud/IMG_4547.jpeg',
+'./src/assets/img/backgroud/IMG_2472.jpeg',
+'./src/assets/img/backgroud/IMG_3916.jpeg',
+'./src/assets/img/backgroud/IMG_9617.jpeg',
+
 ]
 
 const backgroudRandom = () => {

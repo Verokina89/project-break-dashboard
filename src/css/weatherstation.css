@@ -110,6 +110,8 @@ main {
 }
 
 .temperature img {
+	width: 30px;
+	height: 30px;
 	filter: invert(100%);
 } 
 

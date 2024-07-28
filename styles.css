@@ -160,8 +160,10 @@ main > section{
 	border-radius: 50%;
 	width: 20px;
 	height: 20px;
+	cursor: pointer;
 } 
-/* Aqui empieza section all */
+
+/*---SectionAll---*/
 .sectionAll{
 	display: flex;
 	flex-direction: column;

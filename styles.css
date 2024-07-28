@@ -292,6 +292,8 @@ main > section{
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
+	color: black;
+	filter: invert(100%);
 }
 
 .passwordTittle h2 {

@@ -321,7 +321,7 @@ main > section{
 
 /* FOOTER */
 footer {
-	height: 50px;
+	height: 30px;
     display: flex;
     width: 100%;
 }
@@ -343,3 +343,29 @@ footer  img {
 	margin-bottom: 6px;
 } 
 
+
+@media (max-width: 856px) {
+
+	main {
+		display: flex;
+		align-items: center;
+		flex-direction: column-reverse;
+		height: auto;
+	}
+
+	.linkContainer {
+		padding: 20px;
+		
+	}
+
+	.linkContainer img {
+		width: 30px;
+		height: 30px;
+	}
+	
+	footer {
+		padding: 20px;
+	}
+	
+	
+}

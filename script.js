@@ -27,7 +27,7 @@ const imgBackground = ['./src/assets/img/backgroud/dogs-7275314_1280.jpg',
 './src/assets/img/backgroud/IMG_2472.jpeg',
 './src/assets/img/backgroud/IMG_3916.jpeg',
 './src/assets/img/backgroud/IMG_9617.jpeg',
-
+'./src/assets/img/backgroud/TORREBOD1.jpg',
 ]
 
 const backgroudRandom = () => {

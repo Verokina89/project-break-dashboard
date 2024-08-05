@@ -82,11 +82,13 @@ main > section{
 	align-items: center;
 	
 }
+
 .containerMax {
 	width: 100%;
 	max-width: 400px;
 	margin: 0 auto;
 }
+
 .linkContainer {
 	display: flex;
 	justify-content: flex-start;
@@ -320,6 +322,7 @@ main > section{
 }
 
 /* FOOTER */
+
 footer {
 	height: 30px;
     display: flex;
@@ -334,7 +337,6 @@ footer nav {
 	border-bottom: 1px solid black;
 	padding: 0px 10px;
 	width: 100%;
-	
 }   
 
 footer  img {
@@ -353,9 +355,28 @@ footer  img {
 		height: auto;
 	}
 
-	.linkContainer {
+	.contenDigitalclock {
+		margin: 30px;
+
+	}
+
+	.weatherStation {
+		padding: 26px;
+		max-width: 320px;
+	
+	}
+
+	.contentPassword {
+		margin: 20px;
+	}
+
+	.containerMax {
+		margin-bottom: 20px;
 		padding: 20px;
-		
+	}
+
+	.passwordTittle {
+		padding: 30px;
 	}
 
 	.linkContainer img {
@@ -363,8 +384,9 @@ footer  img {
 		height: 30px;
 	}
 	
-	footer {
-		padding: 20px;
+	.footerNav {
+		opacity: 0%;
+	
 	}
 	
 	
